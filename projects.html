@@ -1,16 +1,49 @@
-<main>
-  <section class="section">
-    <h2>Projects</h2>
-    <p>List 3 to 6 projects. Each one should have a title, 2 to 4 bullets, and links.</p>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects | Aashish Shaju</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+</head>
 
-    <div class="card">
-      <b>High-speed control for articulated autonomous vehicles</b>
-      <div class="small">TruckSim–Simulink, adaptive lookahead, stability-focused design.</div>
-    </div>
+<body>
+  <div class="container">
+    <header>
+      <h1 class="site-title">Aashish Shaju</h1>
+      <p class="tagline">Vehicle dynamics, control, and simulation</p>
 
-    <div class="card">
-      <b>Passive ultrasonic acoustic emission wheel diagnostics</b>
-      <div class="small">Feature engineering, statistical separability, Random Forest classification.</div>
-    </div>
-  </section>
-</main>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="publications.html">Publications</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section">
+        <h2>Projects</h2>
+
+        <div class="card">
+          <b>High-speed control for articulated autonomous vehicles</b>
+          <div class="small">TruckSim–Simulink, adaptive lookahead, stability-focused design.</div>
+        </div>
+
+        <div class="card">
+          <b>Passive ultrasonic acoustic emission wheel diagnostics</b>
+          <div class="small">Feature engineering, statistical separability, Random Forest classification.</div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      © <span id="y"></span> Aashish Shaju
+    </footer>
+  </div>
+
+<script>
+  document.getElementById("y").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
