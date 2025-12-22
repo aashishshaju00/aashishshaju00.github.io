@@ -1,10 +1,50 @@
-<main>
-  <section class="section">
-    <h2>Contact</h2>
-    <div class="card">
-      <div><b>Email:</b> your@email.com</div>
-      <div><b>LinkedIn:</b> <a href="https://www.linkedin.com/">link</a></div>
-      <div><b>GitHub:</b> <a href="https://github.com/aashishshaju00">aashishshaju00</a></div>
-    </div>
-  </section>
-</main>
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Aashish Shaju</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1 class="site-title">Aashish Shaju</h1>
+      <p class="tagline">Vehicle dynamics, control, and simulation</p>
+
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="publications.html">Publications</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section">
+        <h2>Contact</h2>
+
+        <div class="card">
+          <div><b>Email:</b> your@email.com</div>
+          <div><b>LinkedIn:</b> <a href="https://www.linkedin.com/">link</a></div>
+          <div><b>GitHub:</b> <a href="https://github.com/aashishshaju00">aashishshaju00</a></div>
+          <div class="small" style="margin-top:10px;">
+            <a href="files/Aashish_Shaju_CV.pdf">Download CV (PDF)</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      © <span id="y"></span> Aashish Shaju
+    </footer>
+  </div>
+
+<script>
+  document.getElementById("y").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
+
