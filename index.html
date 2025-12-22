@@ -4,28 +4,54 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Aashish Shaju</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.5; }
-    .wrap { max-width: 900px; margin: 0 auto; }
-    nav a { margin-right: 14px; }
-  </style>
+  <link rel="stylesheet" href="assets/style.css">
 </head>
+
 <body>
-  <div class="wrap">
-    <h1>Aashish Shaju</h1>
-    <p>Personal website hosted on GitHub Pages.</p>
+  <div class="container">
+    <header>
+      <h1 class="site-title">Aashish Shaju</h1>
+      <p class="tagline">Vehicle dynamics, control, and simulation</p>
 
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="projects.html">Projects</a>
-      <a href="publications.html">Publications</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="publications.html">Publications</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
 
-    <hr>
+    <main>
+      <section class="section">
+        <h2>About</h2>
+        <p>
+          Replace this with a short professional intro. Example:
+          research focus, current role, and what a visitor can find on this site.
+        </p>
+      </section>
 
-    <h2>About</h2>
-    <p>Replace this text with a short intro: research focus, roles, and what the site contains.</p>
+      <section class="section">
+        <h2>Highlights</h2>
+
+        <div class="card">
+          <b>Autonomous vehicle control</b>
+          <div class="small">High-speed lateral and longitudinal control, TruckSim–Simulink co-simulation.</div>
+        </div>
+
+        <div class="card">
+          <b>Passive ultrasonic wheel defect detection</b>
+          <div class="small">Feature extraction and ML-based diagnostics for in-motion monitoring.</div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      © <span id="y"></span> Aashish Shaju
+    </footer>
   </div>
+
+<script>
+  document.getElementById("y").textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
