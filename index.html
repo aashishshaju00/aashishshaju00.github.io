@@ -4,7 +4,36 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Aashish Shaju</title>
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+
+  <style>
+    .about-layout {
+      display: flex;
+      align-items: flex-start;
+      gap: 24px;
+    }
+
+    .about-photo {
+      width: 220px;
+      border-radius: 10px;
+      flex-shrink: 0;
+      display: block;
+    }
+
+    .about-text {
+      flex: 1;
+    }
+
+    @media (max-width: 700px) {
+      .about-layout {
+        flex-direction: column;
+      }
+      .about-photo {
+        width: 180px;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -24,28 +53,39 @@
     <main>
       <section class="section">
         <h2>About</h2>
+
         <div class="about-layout">
           <img
-    src="img/profile/headshot.jpg"
-    alt="Aashish Shaju"
-    style="max-width: 220px; border-radius: 10px; margin-bottom: 14px;"
-  >
+            src="img/profile/headshot.jpg"
+            alt="Aashish Shaju"
+            class="about-photo"
+          >
+
           <div class="about-text">
-        <p>
-          Hi, Greetings and welcome to my Homepage
-This website is focused on my research work and interests.
+            <p>
+              Hi, Greetings and welcome to my Homepage. This website is focused on my research work and interests.
+              I am currently a Postdoctoral Associate at the Center for Vehicle Systems and Safety (CVeSS) Lab at
+              Virginia Tech, working under the supervision of Dr. Mehdi Ahmadian. My research spans dynamics, control
+              systems, modeling, and simulation, with emphasis on autonomous systems and diagnostics for mechanical and
+              transportation systems.
+            </p>
 
-I am currently a Postdoctoral Associate at the  Center for Vehicle Systems and Safety (CVeSS) Lab at Virginia Tech,  working under the supervision of Dr. Mehdi Ahmadian. My research spans dynamics, control systems, modeling, and simulation, with emphasis on autonomous systems and diagnostics for mechanical and transportation systems.
+            <p>
+              My doctoral work focused on adaptive control algorithms and simulation frameworks for high-speed platooning
+              of articulated trucks. Currently, my research involves the detection of rail wheel defects using air-coupled
+              ultrasonic methods, integrating embedded systems, data acquisition, and signal processing.
+            </p>
 
-My doctoral work focused on adaptive control algorithms and simulation frameworks for high-speed platooning of articulated trucks. Currently, my research involves the detection of rail wheel defects using air-coupled ultrasonic methods, integrating embedded systems, data acquisition, and signal processing.
+            <p>
+              I hold a Ph.D. from Virginia Tech, an M.S. from Indian Institute of Technology Hyderabad, and a B.S. from
+              Cochin University of Science and Technology. You can view my complete research outputs on ORCID or ResearchGate.
+            </p>
 
-I hold a Ph.D. from Virginia Tech, an M.S. from Indian Institute of Technology Hyderabad, and a B.S. from  Cochin University of Science and Technology.
-
-You can view my complete research outputs on Orcid ID or Research Gate.
-        </p>
-          <p>
-    <a href="files/Aashish_Shaju_CV.pdf">Download CV (PDF)</a>
-  </p>
+            <p>
+              <a href="files/Aashish_Shaju_CV.pdf">Download CV (PDF)</a>
+            </p>
+          </div>
+        </div>
       </section>
 
       <section class="section">
@@ -61,7 +101,6 @@ You can view my complete research outputs on Orcid ID or Research Gate.
           <div class="small">Feature extraction and ML-based diagnostics for in-motion monitoring.</div>
         </div>
       </section>
-      
     </main>
 
     <footer>
@@ -69,33 +108,8 @@ You can view my complete research outputs on Orcid ID or Research Gate.
     </footer>
   </div>
 
-<script>
-  document.getElementById("y").textContent = new Date().getFullYear();
-</script>
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
-.about-layout {
-  display: flex;
-  align-items: flex-start;
-  gap: 24px;
-}
-
-.about-photo {
-  width: 220px;
-  border-radius: 10px;
-  flex-shrink: 0;
-}
-
-.about-text {
-  flex: 1;
-}
-          @media (max-width: 700px) {
-  .about-layout {
-    flex-direction: column;
-  }
-
-  .about-photo {
-    width: 180px;
-  }
-}
-
