@@ -129,6 +129,35 @@ footer {
   gap: 22px;
 }
 
+
+/* Reset counters for each publication section */
+.journal-pubs {
+  counter-reset: journal-counter;
+}
+
+.conf-pubs {
+  counter-reset: conf-counter;
+}
+
+/* Journal numbering */
+.journal-pubs .pub::before {
+  counter-increment: journal-counter;
+  content: "[" counter(journal-counter) "] ";
+  font-weight: 600;
+  color: var(--accent, #5da9ff);
+  margin-right: 6px;
+}
+
+/* Conference numbering */
+.conf-pubs .pub::before {
+  counter-increment: conf-counter;
+  content: "[" counter(conf-counter) "] ";
+  font-weight: 600;
+  color: var(--accent, #5da9ff);
+  margin-right: 6px;
+}
+
+/* Carousel styles used in the projects page*/
 .carousel {
   flex: 0 0 520px;      /* Bigger than headshot */
   max-width: 520px;
