@@ -128,6 +128,10 @@ footer {
   align-items: flex-start;
   gap: 22px;
 }
+/* Reverse layout for selected coursework projects */
+.project-reverse .project-layout {
+  flex-direction: row-reverse;
+}
 
 
 /* Reset counters for each publication section */
@@ -221,24 +225,45 @@ footer {
 }
 .project-text{flex:1; min-width: 280px;}
 .project-media{flex:1; min-width: 320px;}
-@media (max-width: 900px){
-  .project-grid{flex-direction:column;}
-}
-
-
 .project-text { flex: 1; min-width: 260px; }
-
 .project-bullets { margin: 10px 0 0 0; padding-left: 18px; }
 
 @media (max-width: 900px) {
-  .project-layout { flex-direction: column; }
-  .carousel { max-width: 100%; flex-basis: auto; }
-  .carousel-item { min-width: 85vw; }
-  .carousel-item img { height: 320px; }
-}
-@media (max-width: 700px) {
-  .about-layout { flex-direction: column; }
-  .about-photo { width: 180px; }
-  .site-title { font-size: 36px; }
+
+  /* Project layouts */
+  .project-grid {
+    flex-direction: column;
+  }
+
+  .project-layout {
+    flex-direction: column;
+  }
+
+  /* Carousel behavior */
+  .carousel {
+    max-width: 100%;
+    flex-basis: auto;
+  }
+
+  .carousel-item {
+    min-width: 85vw;
+  }
+
+  .carousel-item img {
+    height: 320px;
+  }
+
+  /* About section */
+  .about-layout {
+    flex-direction: column;
+  }
+
+  .about-photo {
+    width: 180px;
+  }
+
+  .site-title {
+    font-size: 36px;
+  }
 }
 
