@@ -128,10 +128,6 @@ footer {
   align-items: flex-start;
   gap: 22px;
 }
-/* Reverse layout for selected coursework projects */
-.project-reverse .project-layout {
-  flex-direction: row-reverse;
-}
 
 
 /* Reset counters for each publication section */
@@ -266,8 +262,5 @@ footer {
     font-size: 36px;
   }
 
-  .project-reverse .project-layout {
-    flex-direction: column;
-  }
 }
 
