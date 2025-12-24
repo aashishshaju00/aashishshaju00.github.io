@@ -1,3 +1,6 @@
+html {
+  overflow-y: scroll;
+}
 :root {
   --bg: #0b0b0c;
   --panel: #0f0f11;
