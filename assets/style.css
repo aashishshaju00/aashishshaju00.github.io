@@ -265,5 +265,9 @@ footer {
   .site-title {
     font-size: 36px;
   }
+
+  .project-reverse .project-layout {
+    flex-direction: column;
+  }
 }
 
