@@ -58,9 +58,20 @@ nav a {
   color: var(--link);
   text-decoration: none;
   font-weight: 650;
+  padding: 6px 10px;
+  border-radius: 10px;
 }
 
-nav a:hover { text-decoration: underline; }
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav a.active {
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--border);
+  text-decoration: none;
+}
 
 main { padding: 22px 0; }
 
