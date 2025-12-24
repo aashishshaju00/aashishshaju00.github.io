@@ -27,18 +27,95 @@
     <main>
       <section class="section">
         <h2>Publications</h2>
-
-        <div class="card">
-          <b>Paper title</b>
-          <div class="small">Authors. Venue. Year. <a href="#">PDF</a></div>
+    
+        <h3>Journal Publications</h3>
+    
+        <div class="pub-list" data-sort="year-desc">
+          <div class="card pub" data-year="2025">
+            <b>Practical Application of Passive Air-Coupled Ultrasonic Acoustic Sensors for Wheel Crack Detection</b>
+            <div class="small">
+              <b>Aashish Shaju</b>, Nikhil Kumar, Giovanni Mantovani, Steve Southward, Mehdi Ahmadian.<br>
+              <i>Sensors</i>, 25(19):6126, 2025.
+              <a href="https://doi.org/10.3390/s25196126" target="_blank" rel="noopener">DOI</a>
+            </div>
+          </div>
+    
+          <div class="card pub" data-year="2025">
+            <b>Integrated Longitudinal and Lateral Control for High-Speed Platooning of Articulated Vehicles</b>
+            <div class="small">
+              <b>Aashish Shaju</b>, Steve Southward, Mehdi Ahmadian.<br>
+              <i>Vehicle System Dynamics</i>, Taylor &amp; Francis, 2025.
+              <span class="muted">[Under Review]</span>
+            </div>
+          </div>
+    
+          <div class="card pub" data-year="2024">
+            <b>Enhancing Autonomous Vehicle Navigation with a Clothoid-Based Lateral Controller</b>
+            <div class="small">
+              <b>Aashish Shaju</b>, Steve Southward, Mehdi Ahmadian.<br>
+              <i>Applied Sciences</i>, 14(5):1817, 2024.
+              <a href="https://doi.org/10.3390/app14051817" target="_blank" rel="noopener">DOI</a>
+            </div>
+          </div>
+    
+          <div class="card pub" data-year="2023">
+            <b>PID-Based Longitudinal Control of Platooning Trucks</b>
+            <div class="small">
+              <b>Aashish Shaju</b>, Steve Southward, Mehdi Ahmadian.<br>
+              <i>Machines</i>, 11(12):1069, 2023.
+              <a href="https://doi.org/10.3390/machines11121069" target="_blank" rel="noopener">DOI</a>
+            </div>
+          </div>
+    
+          <div class="card pub" data-year="2020">
+            <b>Modelling Transient Response Using PAC 2002-Based Tyre Model</b>
+            <div class="small">
+              <b>Aashish Shaju</b>, Ashok Kumar Pandey.<br>
+              <i>Vehicle System Dynamics</i>, 2020.
+            </div>
+          </div>
         </div>
-
-        <div class="card">
-          <b>Paper title</b>
-          <div class="small">Authors. Venue. Year. <a href="#">PDF</a></div>
+    
+        <h3>Conference Publications &amp; Presentations</h3>
+    
+        <div class="pub-list" data-sort="year-desc">
+          <div class="card pub" data-year="2025">
+            <b>Scalable High-Speed Lateral Control for Single-Body and Articulated Autonomous Vehicles</b>
+            <div class="small">
+              <b>Aashish Shaju</b>, Steve Southward, Mehdi Ahmadian.<br>
+              <i>IAVSD 2025</i>, China.
+              <span class="muted">[Accepted as Plenary Presentation]</span>
+            </div>
+          </div>
+    
+          <div class="card pub" data-year="2025">
+            <b>Development of a Machine Learning Based Diagnostic Framework for Passive Ultrasonic Detection of Wheel Defects</b>
+            <div class="small">
+              <b>Aashish Shaju</b>, Steve Southward, Mehdi Ahmadian.<br>
+              IEEE Vehicular Technology Society (VTS), 2025.
+              <span class="muted">[Under Review]</span>
+            </div>
+          </div>
+    
+          <div class="card pub" data-year="2022">
+            <b>Simulation Study on Longitudinal Control of Platooning Trucks</b>
+            <div class="small">
+              Panelist, Chassis Committee on Automatic Control Systems for Commercial Vehicles.<br>
+              <i>COMVEC 2022</i>.
+            </div>
+          </div>
+    
+          <div class="card pub" data-year="2020">
+            <b>Analysis of Improved Transient Tire Modeling</b>
+            <div class="small">
+              <b>Aashish Shaju</b>, Ashok Pandey.<br>
+              Proceedings of the Indo-Japan Bilateral Symposium on Futuristic Materials and Manufacturing for Next Generation EVs and High-Speed Rail, IIT Madras, 2020.
+            </div>
+          </div>
         </div>
+    
       </section>
-    </main>
+    </main>    
 
     <footer>
       © <span id="y"></span> Aashish Shaju
@@ -49,4 +126,21 @@
   document.getElementById("y").textContent = new Date().getFullYear();
 </script>
 </body>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    // Sort each publication list independently (Journals, Conferences)
+    document.querySelectorAll(".pub-list[data-sort='year-desc']").forEach(list => {
+      const items = Array.from(list.querySelectorAll(".pub"));
+
+      items.sort((a, b) => {
+        const ya = parseInt(a.dataset.year || "0", 10);
+        const yb = parseInt(b.dataset.year || "0", 10);
+        return yb - ya; // newest first
+      });
+
+      items.forEach(item => list.appendChild(item));
+    });
+  });
+</script>
+
 </html>
