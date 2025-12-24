@@ -214,6 +214,18 @@ footer {
 
 .carousel-hint { margin-top: 8px; opacity: 0.8; }
 
+.project-grid{
+  display:flex;
+  gap:24px;
+  align-items:flex-start;
+}
+.project-text{flex:1; min-width: 280px;}
+.project-media{flex:1; min-width: 320px;}
+@media (max-width: 900px){
+  .project-grid{flex-direction:column;}
+}
+
+
 .project-text { flex: 1; min-width: 260px; }
 
 .project-bullets { margin: 10px 0 0 0; padding-left: 18px; }

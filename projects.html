@@ -154,11 +154,130 @@
           </div>
         </div>
 
-        <!-- Existing project cards (keep, refine later) -->
-        <div class="card">
-          <b>High-speed control for articulated autonomous vehicles</b>
-          <div class="small">TruckSim–Simulink, adaptive lookahead, stability-focused design.</div>
+<!-- Project: High-speed control for articulated autonomous vehicles (PhD) -->
+<section class="section">
+  <div class="project-grid">
+    <!-- Text -->
+    <div class="project-text">
+      <h3>High-speed control for articulated autonomous vehicles</h3>
+
+      <p class="small">
+        Doctoral research focused on stability and coordination of heavy-duty articulated vehicles operating in
+        high-speed platoons. A unified, modular control framework was developed with a nested PID architecture
+        for longitudinal regulation and a modified clothoid-based lateral controller for precise path tracking.
+      </p>
+
+      <p class="small">
+        For longitudinal control, an arc-length-based spacing error was introduced to maintain accurate gaps on
+        curved trajectories, supported by a formal string-stability proof to prevent disturbance amplification
+        along the platoon. For lateral control at highway speeds, an adaptive lookahead mechanism was implemented
+        to adjust preview distance using curvature and cross-track error. A data-driven steering-to-curvature
+        look-up table replaced Ackermann-based relations, and a lead filter was designed to compensate lateral
+        dynamics and lag. The approach supports tracking different reference points on the tractor and scales to
+        both single-body and articulated vehicles. The framework was evaluated in TruckSim–Simulink co-simulation
+        on complex routes including the Blue Ridge Parkway and South Grade Road.
+      </p>
+
+      <div class="small">
+        <b>Tools:</b> TruckSim, Simulink/MATLAB<br>
+        <b>Keywords:</b> platooning, string stability, adaptive lookahead, LUT-based steering-to-curvature
+      </div>
+    </div>
+
+    <!-- Carousel -->
+    <div class="project-media">
+      <div class="carousel" aria-label="High-speed platooning project images">
+        <div class="carousel-track">
+
+          <figure class="carousel-item" id="platoon-slide-1">
+            <a href="img/truck_platooning/png/3Truck_platoon.png" target="_blank" rel="noopener">
+              <img src="img/truck_platooning/webp/3Truck_platoon.webp" alt="Three-truck platooning overview"
+                   loading="lazy" decoding="async">
+            </a>
+            <figcaption class="small">
+              <a href="img/truck_platooning/png/3Truck_platoon.png" target="_blank" rel="noopener">Full resolution</a>
+            </figcaption>
+          </figure>
+
+          <figure class="carousel-item" id="platoon-slide-2">
+            <a href="img/truck_platooning/png/Adap_lkahd.png" target="_blank" rel="noopener">
+              <img src="img/truck_platooning/webp/Adap_lkahd.webp" alt="Adaptive lookahead concept/results"
+                   loading="lazy" decoding="async">
+            </a>
+            <figcaption class="small">
+              <a href="img/truck_platooning/png/Adap_lkahd.png" target="_blank" rel="noopener">Full resolution</a>
+            </figcaption>
+          </figure>
+
+          <figure class="carousel-item" id="platoon-slide-3">
+            <a href="img/truck_platooning/png/platooning_framework.png" target="_blank" rel="noopener">
+              <img src="img/truck_platooning/webp/platooning_framework.webp" alt="Unified longitudinal–lateral control framework"
+                   loading="lazy" decoding="async">
+            </a>
+            <figcaption class="small">
+              <a href="img/truck_platooning/png/platooning_framework.png" target="_blank" rel="noopener">Full resolution</a>
+            </figcaption>
+          </figure>
+
+          <figure class="carousel-item" id="platoon-slide-4">
+            <a href="img/truck_platooning/png/SGroad_lat.png" target="_blank" rel="noopener">
+              <img src="img/truck_platooning/webp/SGroad_lat.webp" alt="South Grade Road lateral tracking results"
+                   loading="lazy" decoding="async">
+            </a>
+            <figcaption class="small">
+              <a href="img/truck_platooning/png/SGroad_lat.png" target="_blank" rel="noopener">Full resolution</a>
+            </figcaption>
+          </figure>
+
+          <figure class="carousel-item" id="platoon-slide-5">
+            <a href="img/truck_platooning/png/SGroad_long.png" target="_blank" rel="noopener">
+              <img src="img/truck_platooning/webp/SGroad_long.webp" alt="South Grade Road longitudinal spacing results"
+                   loading="lazy" decoding="async">
+            </a>
+            <figcaption class="small">
+              <a href="img/truck_platooning/png/SGroad_long.png" target="_blank" rel="noopener">Full resolution</a>
+            </figcaption>
+          </figure>
+
+          <figure class="carousel-item" id="platoon-slide-6">
+            <a href="img/truck_platooning/png/String_stab.png" target="_blank" rel="noopener">
+              <img src="img/truck_platooning/webp/String_stab.webp" alt="String stability analysis"
+                   loading="lazy" decoding="async">
+            </a>
+            <figcaption class="small">
+              <a href="img/truck_platooning/png/String_stab.png" target="_blank" rel="noopener">Full resolution</a>
+            </figcaption>
+          </figure>
+
+          <figure class="carousel-item" id="platoon-slide-7">
+            <a href="img/truck_platooning/png/Tracking_diff_pts.png" target="_blank" rel="noopener">
+              <img src="img/truck_platooning/webp/Tracking_diff_pts.webp" alt="Tracking different reference points on the tractor"
+                   loading="lazy" decoding="async">
+            </a>
+            <figcaption class="small">
+              <a href="img/truck_platooning/png/Tracking_diff_pts.png" target="_blank" rel="noopener">Full resolution</a>
+            </figcaption>
+          </figure>
+
         </div>
+
+        <div class="carousel-controls" aria-hidden="false">
+          <button type="button" class="carousel-btn"
+            onclick="this.closest('.carousel').querySelector('.carousel-track').scrollBy({left: -520, behavior: 'smooth'});">
+            ‹
+          </button>
+          <button type="button" class="carousel-btn"
+            onclick="this.closest('.carousel').querySelector('.carousel-track').scrollBy({left: 520, behavior: 'smooth'});">
+            ›
+          </button>
+        </div>
+
+        <div class="small carousel-hint">Use the arrows or trackpad to scroll. Click an image for full resolution.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
         <div class="card">
           <b>Passive ultrasonic acoustic emission wheel diagnostics</b>
