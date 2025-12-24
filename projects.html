@@ -298,11 +298,164 @@
           </div>
         </div>
 
+        <!-- Project 3: Transient tire modeling (Master's research) -->
+        <div class="card project-card">
+          <h3 class="project-title">Transient tire modeling for improved vehicle handling simulations (Master&#39;s
+            research)</h3>
+          <div class="small project-meta">Second-order lag tire-force dynamics, analytical relaxation length estimation,
+            CarSim validation.</div>
 
-        <div class="card">
+          <div class="project-layout">
+            <!-- Carousel (left) -->
+            <div class="carousel" aria-label="Transient tire modeling project images">
+              <div class="carousel-track">
+
+                <figure class="carousel-item" id="tire-slide-1">
+                  <a href="img/tire_modeling/jpg/abs_force.jpg" target="_blank" rel="noopener">
+                    <img src="img/tire_modeling/webp/abs_force.webp" alt="ABS braking: force response comparison"
+                      loading="lazy" decoding="async">
+                  </a>
+                  <figcaption class="small">
+                    <a href="img/tire_modeling/jpg/abs_force.jpg" target="_blank" rel="noopener">Full resolution</a>
+                  </figcaption>
+                </figure>
+
+                <figure class="carousel-item" id="tire-slide-2">
+                  <a href="img/tire_modeling/jpg/block_tire_model.jpg" target="_blank" rel="noopener">
+                    <img src="img/tire_modeling/webp/block_tire_model.webp"
+                      alt="Block diagram of the transient tire model" loading="lazy" decoding="async">
+                  </a>
+                  <figcaption class="small">
+                    <a href="img/tire_modeling/jpg/block_tire_model.jpg" target="_blank" rel="noopener">Full
+                      resolution</a>
+                  </figcaption>
+                </figure>
+
+                <figure class="carousel-item" id="tire-slide-3">
+                  <a href="img/tire_modeling/jpg/custom_all_order.jpg" target="_blank" rel="noopener">
+                    <img src="img/tire_modeling/webp/custom_all_order.webp"
+                      alt="Second-order lag (all-order) transient model response" loading="lazy" decoding="async">
+                  </a>
+                  <figcaption class="small">
+                    <a href="img/tire_modeling/jpg/custom_all_order.jpg" target="_blank" rel="noopener">Full
+                      resolution</a>
+                  </figcaption>
+                </figure>
+
+                <figure class="carousel-item" id="tire-slide-4">
+                  <a href="img/tire_modeling/jpg/fish_force.jpg" target="_blank" rel="noopener">
+                    <img src="img/tire_modeling/webp/fish_force.webp"
+                      alt="Fish-hook maneuver: force response comparison" loading="lazy" decoding="async">
+                  </a>
+                  <figcaption class="small">
+                    <a href="img/tire_modeling/jpg/fish_force.jpg" target="_blank" rel="noopener">Full resolution</a>
+                  </figcaption>
+                </figure>
+
+                <figure class="carousel-item" id="tire-slide-5">
+                  <a href="img/tire_modeling/jpg/flowchart.jpg" target="_blank" rel="noopener">
+                    <img src="img/tire_modeling/webp/flowchart.webp" alt="Model workflow and implementation flowchart"
+                      loading="lazy" decoding="async">
+                  </a>
+                  <figcaption class="small">
+                    <a href="img/tire_modeling/jpg/flowchart.jpg" target="_blank" rel="noopener">Full resolution</a>
+                  </figcaption>
+                </figure>
+
+                <figure class="carousel-item" id="tire-slide-6">
+                  <a href="img/tire_modeling/jpg/relaxation_subroutine.jpg" target="_blank" rel="noopener">
+                    <img src="img/tire_modeling/webp/relaxation_subroutine.webp"
+                      alt="Analytical relaxation length estimation subroutine" loading="lazy" decoding="async">
+                  </a>
+                  <figcaption class="small">
+                    <a href="img/tire_modeling/jpg/relaxation_subroutine.jpg" target="_blank" rel="noopener">Full
+                      resolution</a>
+                  </figcaption>
+                </figure>
+
+                <figure class="carousel-item" id="tire-slide-7">
+                  <a href="img/tire_modeling/jpg/rr_latest.jpg" target="_blank" rel="noopener">
+                    <img src="img/tire_modeling/webp/rr_latest.webp" alt="Relaxation response results and comparison"
+                      loading="lazy" decoding="async">
+                  </a>
+                  <figcaption class="small">
+                    <a href="img/tire_modeling/jpg/rr_latest.jpg" target="_blank" rel="noopener">Full resolution</a>
+                  </figcaption>
+                </figure>
+
+                <figure class="carousel-item" id="tire-slide-8">
+                  <a href="img/tire_modeling/jpg/step_steer.jpg" target="_blank" rel="noopener">
+                    <img src="img/tire_modeling/webp/step_steer.webp"
+                      alt="Step steer: transient force build-up response" loading="lazy" decoding="async">
+                  </a>
+                  <figcaption class="small">
+                    <a href="img/tire_modeling/jpg/step_steer.jpg" target="_blank" rel="noopener">Full resolution</a>
+                  </figcaption>
+                </figure>
+
+              </div>
+
+              <!-- Navigation buttons (scroll the track) -->
+              <div class="carousel-controls" aria-hidden="false">
+                <button type="button" class="carousel-btn"
+                  onclick="this.closest('.carousel').querySelector('.carousel-track').scrollBy({left: -520, behavior: 'smooth'});">
+                  ‹
+                </button>
+                <button type="button" class="carousel-btn"
+                  onclick="this.closest('.carousel').querySelector('.carousel-track').scrollBy({left: 520, behavior: 'smooth'});">
+                  ›
+                </button>
+              </div>
+
+              <div class="small carousel-hint">Use the arrows or trackpad to scroll. Click an image for full resolution.
+              </div>
+            </div>
+
+            <!-- Description (right) -->
+            <div class="project-text">
+              <p>
+                This research addressed a key limitation in vehicle handling simulations: the lag in tire force
+                generation caused
+                by carcass compliance. While industry-standard steady-state models such as PAC2002 (Magic Formula) are
+                effective
+                for equilibrium behavior, they often miss the transient dynamics needed for safety-critical applications
+                such as
+                ADAS and ABS. A general transient handling model was developed by implementing a second-order lag
+                formulation,
+                providing improved flexibility and accuracy compared to common first-order approximations.
+              </p>
+
+              <p>
+                Longitudinal and lateral relaxation lengths were estimated analytically using Taylor-series-based
+                approximations,
+                and the framework was extended to capture coupling between longitudinal and lateral dynamics that is
+                typically
+                neglected in simplified approaches. The final model was implemented in MATLAB and validated against
+                CarSim
+                maneuvers (including Fish-hook and ABS braking) and experimental data, supporting real-time
+                “tire-as-a-sensor”
+                use cases.
+              </p>
+
+              <ul class="project-bullets">
+                <li>Second-order lag tire-force dynamics to capture transient force build-up from carcass compliance.
+                </li>
+                <li>Analytical relaxation length estimation using Taylor series, with longitudinal–lateral coupling.
+                </li>
+                <li>MATLAB implementation validated using CarSim maneuvers and experimental datasets.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <div class="card project-card">
           <b>Passive ultrasonic acoustic emission wheel diagnostics</b>
           <div class="small">Feature engineering, statistical separability, Random Forest classification.</div>
         </div>
+
       </section>
 
       <section class="section">
