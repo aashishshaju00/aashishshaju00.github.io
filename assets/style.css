@@ -130,9 +130,9 @@ footer {
 }
 
 .section-break{
-  margin: 28px 0 14px;
-  padding-top: 18px;
-  border-top: 1px solid rgba(255,255,255,0.14);
+  margin: 40px 0 22px;
+  padding-top: 20px;
+  border-top: 3px solid #3b82f6; /* accent blue */
 }
 
 .section-break h2{
@@ -141,8 +141,9 @@ footer {
 
 .section-break-sub{
   margin-top: 6px;
-  opacity: 0.85;
+  color: #cbd5f5;
 }
+
 
 /* Reset counters for each publication section */
 .journal-pubs {
