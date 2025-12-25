@@ -129,6 +129,20 @@ footer {
   gap: 22px;
 }
 
+.section-break{
+  margin: 28px 0 14px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255,255,255,0.14);
+}
+
+.section-break h2{
+  margin: 0;
+}
+
+.section-break-sub{
+  margin-top: 6px;
+  opacity: 0.85;
+}
 
 /* Reset counters for each publication section */
 .journal-pubs {
