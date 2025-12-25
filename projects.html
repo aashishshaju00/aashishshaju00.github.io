@@ -505,59 +505,54 @@
 
                 <figure class="carousel-item">
                   <a href="img/mpc_proj/png/circle_tracking.png" target="_blank" rel="noopener">
-                    <img src="img/mpc_proj/webp/circle_tracking.webp"
-                         alt="Circular trajectory tracking result"
-                         loading="lazy" decoding="async">
+                    <img src="img/mpc_proj/webp/circle_tracking.webp" alt="Circular trajectory tracking result"
+                      loading="lazy" decoding="async">
                   </a>
                   <figcaption class="small">
                     <a href="img/mpc_proj/png/circle_tracking.png" target="_blank" rel="noopener">Full resolution</a>
                   </figcaption>
                 </figure>
-                
+
                 <figure class="carousel-item">
                   <a href="img/mpc_proj/png/figure8_tracking.png" target="_blank" rel="noopener">
-                    <img src="img/mpc_proj/webp/figure8_tracking.webp"
-                         alt="Figure-eight trajectory tracking result"
-                         loading="lazy" decoding="async">
+                    <img src="img/mpc_proj/webp/figure8_tracking.webp" alt="Figure-eight trajectory tracking result"
+                      loading="lazy" decoding="async">
                   </a>
                   <figcaption class="small">
                     <a href="img/mpc_proj/png/figure8_tracking.png" target="_blank" rel="noopener">Full resolution</a>
                   </figcaption>
                 </figure>
-                
+
                 <figure class="carousel-item">
                   <a href="img/mpc_proj/png/figure8_steer.png" target="_blank" rel="noopener">
-                    <img src="img/mpc_proj/webp/figure8_steer.webp"
-                         alt="Steering input during figure-eight tracking"
-                         loading="lazy" decoding="async">
+                    <img src="img/mpc_proj/webp/figure8_steer.webp" alt="Steering input during figure-eight tracking"
+                      loading="lazy" decoding="async">
                   </a>
                   <figcaption class="small">
                     <a href="img/mpc_proj/png/figure8_steer.png" target="_blank" rel="noopener">Full resolution</a>
                   </figcaption>
                 </figure>
-                
+
                 <figure class="carousel-item">
                   <a href="img/mpc_proj/png/error_plots.png" target="_blank" rel="noopener">
-                    <img src="img/mpc_proj/webp/error_plots.webp"
-                         alt="Tracking error plots and performance metrics"
-                         loading="lazy" decoding="async">
+                    <img src="img/mpc_proj/webp/error_plots.webp" alt="Tracking error plots and performance metrics"
+                      loading="lazy" decoding="async">
                   </a>
                   <figcaption class="small">
                     <a href="img/mpc_proj/png/error_plots.png" target="_blank" rel="noopener">Full resolution</a>
                   </figcaption>
                 </figure>
-                
+
                 <figure class="carousel-item">
                   <a href="img/mpc_proj/png/kinematic_model.png" target="_blank" rel="noopener">
-                    <img src="img/mpc_proj/webp/kinematic_model.webp"
-                         alt="Tractor-trailer kinematic model schematic"
-                         loading="lazy" decoding="async">
+                    <img src="img/mpc_proj/webp/kinematic_model.webp" alt="Tractor-trailer kinematic model schematic"
+                      loading="lazy" decoding="async">
                   </a>
                   <figcaption class="small">
                     <a href="img/mpc_proj/png/kinematic_model.png" target="_blank" rel="noopener">Full resolution</a>
                   </figcaption>
                 </figure>
-                
+
 
               </div>
 
@@ -704,6 +699,119 @@
           </div>
         </div>
 
+        <!-- Selected Coursework Project: MIMO satellite attitude + flexible-mode control -->
+        <div class="card project-card">
+          <h3 class="project-title">MIMO output-feedback control of a satellite with flexible solar panels</h3>
+          <div class="small project-meta">Flexible-mode damping + pointing regulation, 2 thrusters (inputs), 4 panel
+            sensors (outputs), observer-based control.</div>
+
+          <div class="project-layout">
+            <!-- Description (left) -->
+            <div class="project-text">
+              <p>
+                This simulation study developed a MIMO control system to regulate both rigid-body pointing modes and
+                flexible
+                vibration modes of a satellite with flexible solar panels. The plant includes two bi-directional
+                attitude
+                control thrusters (inputs) used to maintain panel orientation while actively damping vibrations induced
+                by
+                attitude maneuvers. Four sensors distributed along the panel length provide measurements of panel motion
+                (outputs).
+              </p>
+
+              <p>
+                The design objective was an output-feedback controller that drives the four measured outputs to zero
+                using the
+                two thrusters. The workflow included open-loop evaluation of controllability, output stability, and
+                observability, followed by full-state feedback design, observer-based output feedback using a Luenberger
+                estimator, and an LQR optimal compensator, with validation via time-domain responses and pole/response
+                checks.
+              </p>
+
+              <ul class="project-bullets">
+                <li>Open-loop analysis for controllability and observability, with baseline response characterization.
+                </li>
+                <li>Full-state feedback and output-feedback control using Luenberger state estimation.</li>
+                <li>LQR-based optimal compensator design and validation using pole/response and closed-loop results.
+                </li>
+              </ul>
+            </div>
+
+            <!-- Carousel (right) -->
+            <div class="carousel" aria-label="Satellite flexible-mode control project images">
+              <div class="carousel-track">
+
+                <figure class="carousel-item" id="ct-slide-1">
+                  <a href="img/ct_control_proj/png/satellite.png" target="_blank" rel="noopener">
+                    <img src="img/ct_control_proj/webp/satellite.webp"
+                      alt="Satellite with flexible solar panels (concept model)" loading="lazy" decoding="async">
+                  </a>
+                  <figcaption class="small">
+                    <a href="img/ct_control_proj/png/satellite.png" target="_blank" rel="noopener">Full resolution</a>
+                  </figcaption>
+                </figure>
+
+                <figure class="carousel-item" id="ct-slide-2">
+                  <a href="img/ct_control_proj/png/Open_loop_responses.png" target="_blank" rel="noopener">
+                    <img src="img/ct_control_proj/webp/Open_loop_responses.webp"
+                      alt="Open-loop responses and baseline dynamics" loading="lazy" decoding="async">
+                  </a>
+                  <figcaption class="small">
+                    <a href="img/ct_control_proj/png/Open_loop_responses.png" target="_blank" rel="noopener">Full
+                      resolution</a>
+                  </figcaption>
+                </figure>
+
+                <figure class="carousel-item" id="ct-slide-3">
+                  <a href="img/ct_control_proj/png/Luenberger_estimator.png" target="_blank" rel="noopener">
+                    <img src="img/ct_control_proj/webp/Luenberger_estimator.webp"
+                      alt="Luenberger observer for state estimation" loading="lazy" decoding="async">
+                  </a>
+                  <figcaption class="small">
+                    <a href="img/ct_control_proj/png/Luenberger_estimator.png" target="_blank" rel="noopener">Full
+                      resolution</a>
+                  </figcaption>
+                </figure>
+
+                <figure class="carousel-item" id="ct-slide-4">
+                  <a href="img/ct_control_proj/png/LQR.png" target="_blank" rel="noopener">
+                    <img src="img/ct_control_proj/webp/LQR.webp" alt="LQR compensator design results" loading="lazy"
+                      decoding="async">
+                  </a>
+                  <figcaption class="small">
+                    <a href="img/ct_control_proj/png/LQR.png" target="_blank" rel="noopener">Full resolution</a>
+                  </figcaption>
+                </figure>
+
+                <figure class="carousel-item" id="ct-slide-5">
+                  <a href="img/ct_control_proj/png/poles.png" target="_blank" rel="noopener">
+                    <img src="img/ct_control_proj/webp/poles.webp" alt="Pole locations and stability comparison"
+                      loading="lazy" decoding="async">
+                  </a>
+                  <figcaption class="small">
+                    <a href="img/ct_control_proj/png/poles.png" target="_blank" rel="noopener">Full resolution</a>
+                  </figcaption>
+                </figure>
+
+              </div>
+
+              <!-- Navigation buttons (scroll the track) -->
+              <div class="carousel-controls" aria-hidden="false">
+                <button type="button" class="carousel-btn"
+                  onclick="this.closest('.carousel').querySelector('.carousel-track').scrollBy({left: -520, behavior: 'smooth'});">
+                  ‹
+                </button>
+                <button type="button" class="carousel-btn"
+                  onclick="this.closest('.carousel').querySelector('.carousel-track').scrollBy({left: 520, behavior: 'smooth'});">
+                  ›
+                </button>
+              </div>
+
+              <div class="small carousel-hint">Use the arrows or trackpad to scroll. Click an image for full resolution.
+              </div>
+            </div>
+          </div>
+        </div>
 
 
         <div class="card">
