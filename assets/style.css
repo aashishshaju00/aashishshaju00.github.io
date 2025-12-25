@@ -239,6 +239,43 @@ footer {
 .project-text { flex: 1; min-width: 260px; }
 .project-bullets { margin: 10px 0 0 0; padding-left: 18px; }
 
+
+/* Media actions under project carousel */
+.media-actions {
+  margin-top: 0.6rem;
+  display: flex;
+  align-items: center;
+}
+
+/* Video demo link */
+.video-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #bfbfbf;
+  text-decoration: none;
+  transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+.video-link:hover {
+  color: #ffffff;
+}
+
+/* YouTube icon */
+.video-icon {
+  height: 16px;
+  width: auto;
+  opacity: 0.75;
+  transition: opacity 0.2s ease;
+}
+
+.video-link:hover .video-icon {
+  opacity: 1;
+}
+
+
 @media (max-width: 900px) {
 
   /* Project layouts */
